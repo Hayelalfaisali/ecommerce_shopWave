@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Product } from "@/types";
+import { useCartStore } from "@/store/useCartStore";
 import { ShoppingCart, Star } from "lucide-react";
 
 interface ProductCardProps {
@@ -9,7 +10,13 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
-
+  const { addItem } = useCartStore();
+  
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    addItem(product);
+  };
   
   return (
     <div className="product-card group">
@@ -45,6 +52,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <div className="flex items-center justify-between">
             <span className="product-price">${product.price.toFixed(2)}</span>
             <button
+              onClick={handleAddToCart}
               className="p-2 rounded-full bg-gray-100 hover:bg-shop-blue hover:text-white transition-colors duration-300"
               aria-label="Add to cart"
             >

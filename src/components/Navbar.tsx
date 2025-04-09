@@ -1,12 +1,14 @@
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useCartStore } from "@/store/useCartStore";
 import { ShoppingCart, Menu, X, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { itemCount } = useCartStore();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,7 +59,11 @@ const Navbar: React.FC = () => {
             </button>
             <Link to="/cart" className="text-gray-700 hover:text-shop-blue relative">
               <ShoppingCart size={20} />
-            0
+              {itemCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-shop-blue text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  {itemCount}
+                </span>
+              )}
             </Link>
           </div>
 
@@ -65,7 +71,11 @@ const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center space-x-4">
             <Link to="/cart" className="text-gray-700 hover:text-shop-blue relative">
               <ShoppingCart size={20} />
-         0
+              {itemCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-shop-blue text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  {itemCount}
+                </span>
+              )}
             </Link>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
