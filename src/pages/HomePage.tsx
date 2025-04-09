@@ -74,8 +74,8 @@ const HomePage: React.FC = () => {
         </div>
         
         {/* Promotion Banner */}
-        <div className="my-16 bg-gradient-to-r from-shop-indigo/90 to-shop-blue/90 rounded-xl p-8 text-white">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="my-16 bg-gradient-to-r from-indigo-500/90 to-blue-500/90 rounded-xl p-8 text-white">
+        <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-6 md:mb-0">
               <h2 className="text-2xl md:text-3xl font-bold mb-2">
                 Summer Sale - Up to 50% Off
@@ -85,7 +85,7 @@ const HomePage: React.FC = () => {
               </p>
               <a 
                 href="/shop" 
-                className="inline-block px-6 py-3 bg-white text-shop-indigo rounded-md font-medium hover:bg-gray-100 transition-colors"
+                className="inline-block px-6 py-3 bg-white text-indigo-500 rounded-md font-medium hover:bg-gray-100 transition-colors"
               >
                 Shop the Sale
               </a>

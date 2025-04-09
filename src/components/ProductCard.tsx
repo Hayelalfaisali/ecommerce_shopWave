@@ -23,9 +23,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <Link to={`/product/${product.id}`} className="block">
         <div className="relative overflow-hidden rounded-md">
           <img 
-            src={product.imageUrl} 
+            src={`${product.imageUrl}&h=${300 * 50}`} 
             alt={product.name} 
-            className="product-image transition-transform object-cover duration-300 group-hover:scale-105"
+            className="product-image transition-transform object-contain duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
         </div>
