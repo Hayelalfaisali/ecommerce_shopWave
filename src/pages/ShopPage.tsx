@@ -98,7 +98,7 @@ const ShopPage: React.FC = () => {
                 placeholder="Search products..."
                 value={searchTerm}
                 onChange={handleSearchChange}
-                className="w-full px-4 py-2 pr-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-shop-blue focus:border-transparent"
+                className="w-full px-4 py-2 pr-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-text-blue-500 focus:border-transparent"
               />
               <div className="absolute right-3 top-2.5">
                 {searchTerm ? (
@@ -126,7 +126,7 @@ const ShopPage: React.FC = () => {
                   id="sort"
                   value={sortBy}
                   onChange={handleSortChange}
-                  className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-shop-blue focus:border-transparent"
+                  className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-text-blue-500 focus:border-transparent"
                 >
                   <option value="default">Default</option>
                   <option value="price-low-high">Price: Low to High</option>
@@ -157,7 +157,7 @@ const ShopPage: React.FC = () => {
                 {searchTerm && (
                   <button
                     onClick={clearSearch}
-                    className="mt-4 text-shop-blue hover:underline"
+                    className="mt-4 text-blue-500 hover:underline"
                   >
                     Clear search
                   </button>

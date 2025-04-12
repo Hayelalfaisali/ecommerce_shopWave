@@ -55,14 +55,14 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title }) =>
         <div className="flex space-x-2">
           <button
             onClick={prevSlide}
-            className="p-2 rounded-full border border-gray-200 hover:bg-shop-blue hover:text-white hover:border-shop-blue transition-colors"
+            className="p-2 rounded-full border border-gray-200 hover:bg-blue-500 hover:text-white hover:border-blue-5bg-blue-500 transition-colors"
             aria-label="Previous slide"
           >
             <ChevronLeft size={20} />
           </button>
           <button
             onClick={nextSlide}
-            className="p-2 rounded-full border border-gray-200 hover:bg-shop-blue hover:text-white hover:border-shop-blue transition-colors"
+            className="p-2 rounded-full border border-gray-200 hover:bg-blue-500 hover:text-white hover:border-blue-5bg-blue-500 transition-colors"
             aria-label="Next slide"
           >
             <ChevronRight size={20} />
@@ -96,7 +96,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title }) =>
             onClick={() => setCurrentIndex(index)}
             className={cn(
               "w-2 h-2 rounded-full transition-all",
-              currentIndex === index ? "bg-shop-blue w-6" : "bg-gray-300"
+              currentIndex === index ? "bg-blue-500 w-6" : "bg-gray-300"
             )}
             aria-label={`Go to slide ${index + 1}`}
           />

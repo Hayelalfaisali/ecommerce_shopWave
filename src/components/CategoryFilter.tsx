@@ -20,7 +20,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
         <button
           className={`block w-full text-left py-2 px-3 rounded-md transition-colors ${
             selectedCategory === "all"
-              ? "bg-shop-blue text-white"
+              ? "bg-blue-500 text-white"
               : "bg-gray-100 hover:bg-gray-200 text-gray-700"
           }`}
           onClick={() => onSelectCategory("all")}
@@ -33,7 +33,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
             key={category.id}
             className={`block w-full text-left py-2 px-3 rounded-md transition-colors ${
               selectedCategory === category.name
-                ? "bg-shop-blue text-white"
+                ? "bg-blue-500 text-white"
                 : "bg-gray-100 hover:bg-gray-200 text-gray-700"
             }`}
             onClick={() => onSelectCategory(category.name)}
