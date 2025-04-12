@@ -184,7 +184,6 @@ ShopWave is licensed under the MIT License - see the [LICENSE](LICENSE) file for
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Lucide Icons](https://lucide.dev/)
-- All our contributors and users
 
 ---
 
