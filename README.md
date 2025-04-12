@@ -6,9 +6,6 @@ ShopWave is a modern, high-performance e-commerce platform built with React, Typ
 
 [
 
-](LICENSE)
-[
-
 ](https://reactjs.org/)
 [
 
