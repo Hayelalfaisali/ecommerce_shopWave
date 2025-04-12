@@ -14,8 +14,8 @@ function Vlaues() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="bg-white p-6 rounded-lg shadow-sm">
                         <div className="flex justify-center mb-4">
-                            <div className="bg-blue-500/10 p-3 rounded-full">
-                                <Award size={28} className="text-blue-500" />
+                            <div className="bg-indigo-500/10 p-3 rounded-full">
+                                <Award size={28} className="text-indigo-500" />
                             </div>
                         </div>
                         <h3 className="text-xl font-semibold text-center mb-3">Quality</h3>
@@ -26,8 +26,8 @@ function Vlaues() {
 
                     <div className="bg-white p-6 rounded-lg shadow-sm">
                         <div className="flex justify-center mb-4">
-                            <div className="bg-blue-500/10 p-3 rounded-full">
-                                <Heart size={28} className="text-blue-500" />
+                            <div className="bg-indigo-500/10 p-3 rounded-full">
+                                <Heart size={28} className="text-indigo-500" />
                             </div>
                         </div>
                         <h3 className="text-xl font-semibold text-center mb-3">Customer First</h3>
@@ -38,8 +38,8 @@ function Vlaues() {
 
                     <div className="bg-white p-6 rounded-lg shadow-sm">
                         <div className="flex justify-center mb-4">
-                            <div className="bg-blue-500/10 p-3 rounded-full">
-                                <TrendingUp size={28} className="text-blue-500" />
+                            <div className="bg-indigo-500/10 p-3 rounded-full">
+                                <TrendingUp size={28} className="text-indigo-500" />
                             </div>
                         </div>
                         <h3 className="text-xl font-semibold text-center mb-3">Continuous Improvement</h3>

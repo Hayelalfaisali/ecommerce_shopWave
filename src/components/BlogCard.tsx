@@ -19,7 +19,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
                     alt={post.title}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
-                <Badge className="absolute top-3 right-3 bg-blue-500 text-white">{post.category}</Badge>
+                <Badge className="absolute top-3 right-3 bg-indigo-500 text-white">{post.category}</Badge>
             </div>
             <CardHeader className="pb-2">
                 <CardTitle className="text-xl line-clamp-2">{post.title}</CardTitle>
@@ -36,7 +36,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
                     <span className="text-sm text-gray-500">By {post.author}</span>
                     <Link
                         to={`/blog/${post.id}`}
-                        className="text-blue-500 hover:text-indigo-500 font-medium text-sm"
+                        className="text-indigo-500 hover:text-indigo-500 font-medium text-sm"
                     >
                         Read more
                     </Link>

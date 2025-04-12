@@ -34,7 +34,7 @@
   --sidebar-ring: 217.2 91.2% 59.8%;
 
   /* Brand colors */
-  --bluebg-blue-500: #0EA5E9;
+  --bluebg-indigo-500: #0EA5E9;
   --grabg-gray-300: #F1F0FB;
   --shop-gray: #1A1F2C;
 }
@@ -94,7 +94,7 @@
   }
 
   .product-price {
-    @apply font-bold text-blue-500 ;
+    @apply font-bold text-indigo-500 ;
   }
 
   .product-category {
@@ -102,11 +102,11 @@
   }
 
   .btn-primary {
-    @apply bg-blue-500 text-white rounded-md px-4 py-2 transition-colors hover:bg-blue-600;
+    @apply bg-indigo-500 text-white rounded-md px-4 py-2 transition-colors hover:bg-blue-600;
   }
 
   .btn-secondary {
-    @apply bg-gray-300 text-gray-400 rounded-md px-4 py-2 transition-colors hover:bg-gray-200;
+    @apply bg-gray-200 text-gray-800 rounded-md px-4 py-2 transition-colors hover:bg-gray-200;
   }
 
   .section-title {
@@ -114,7 +114,7 @@
   }
 
   .section-title::after {
-    @apply content-[''] absolute left-0 bottom-0 h-1 w-24 bg-blue-500;
+    @apply content-[''] absolute left-0 bottom-0 h-1 w-24 bg-indigo-500;
   }
 }
 

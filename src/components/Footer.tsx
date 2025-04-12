@@ -11,19 +11,19 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold text-indigo-500 mb-4">
-              SHOP<span className="text-blue-500">WAVE</span>
+              SHOP<span className="text-indigo-500">WAVE</span>
             </h3>
             <p className="text-gray-600 mb-4">
               Your one-stop destination for quality products with the best shopping experience.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-600 hover:text-blue-500" aria-label="Facebook">
+              <a href="#" className="text-gray-600 hover:text-indigo-500" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-500" aria-label="Twitter">
+              <a href="#" className="text-gray-600 hover:text-indigo-500" aria-label="Twitter">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-500" aria-label="Instagram">
+              <a href="#" className="text-gray-600 hover:text-indigo-500" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
             </div>
@@ -33,10 +33,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold text-gray-800 mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-600 hover:text-blue-500">Home</Link></li>
-              <li><Link to="/shop" className="text-gray-600 hover:text-blue-500">Shop</Link></li>
-              <li><Link to="/about" className="text-gray-600 hover:text-blue-500">About Us</Link></li>
-              <li><Link to="/contact" className="text-gray-600 hover:text-blue-500">Contact</Link></li>
+              <li><Link to="/" className="text-gray-600 hover:text-indigo-500">Home</Link></li>
+              <li><Link to="/shop" className="text-gray-600 hover:text-indigo-500">Shop</Link></li>
+              <li><Link to="/about" className="text-gray-600 hover:text-indigo-500">About Us</Link></li>
+              <li><Link to="/contact" className="text-gray-600 hover:text-indigo-500">Contact</Link></li>
             </ul>
           </div>
 
@@ -44,10 +44,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold text-gray-800 mb-4">Customer Service</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 hover:text-blue-500">Shipping Policy</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-blue-500">Return Policy</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-blue-500">FAQ</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-blue-500">Terms & Conditions</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-indigo-500">Shipping Policy</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-indigo-500">Return Policy</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-indigo-500">FAQ</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-indigo-500">Terms & Conditions</a></li>
             </ul>
           </div>
 
@@ -56,15 +56,15 @@ const Footer: React.FC = () => {
             <h4 className="font-semibold text-gray-800 mb-4">Contact Us</h4>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPin size={18} className="mr-2 text-blue-500 mt-1" />
+                <MapPin size={18} className="mr-2 text-indigo-500 mt-1" />
                 <span className="text-gray-600">123 Shopping Street, Retail City, 10001</span>
               </li>
               <li className="flex items-center">
-                <Phone size={18} className="mr-2 text-blue-500" />
+                <Phone size={18} className="mr-2 text-indigo-500" />
                 <span className="text-gray-600">(555) 123-4567</span>
               </li>
               <li className="flex items-center">
-                <Mail size={18} className="mr-2 text-blue-500" />
+                <Mail size={18} className="mr-2 text-indigo-500" />
                 <span className="text-gray-600">contact@shopwave.com</span>
               </li>
             </ul>

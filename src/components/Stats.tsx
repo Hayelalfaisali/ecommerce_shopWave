@@ -2,7 +2,7 @@ import { Users, ShoppingBag, Award, MessageSquare } from "lucide-react"
 
 function Stats() {
   return (
-    <div><div className="bg-gradient-to-r from-indigo-500/90 to-blue-500 bg-blue-500/90 py-16 text-white">
+    <div><div className="bg-gradient-to-r from-indigo-500/90 to-indigo-500 bg-indigo-500/90 py-16 text-white">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
         <div>

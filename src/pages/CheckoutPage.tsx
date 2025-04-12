@@ -153,7 +153,7 @@ const CheckoutPage: React.FC = () => {
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleChange}
-                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.firstName ? "border-red-500" : "border-gray-300"
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.firstName ? "border-red-500" : "border-gray-300"
                         }`}
                     />
                     {errors.firstName && (
@@ -169,7 +169,7 @@ const CheckoutPage: React.FC = () => {
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleChange}
-                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.lastName ? "border-red-500" : "border-gray-300"
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.lastName ? "border-red-500" : "border-gray-300"
                         }`}
                     />
                     {errors.lastName && (
@@ -185,7 +185,7 @@ const CheckoutPage: React.FC = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.email ? "border-red-500" : "border-gray-300"
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.email ? "border-red-500" : "border-gray-300"
                         }`}
                     />
                     {errors.email && (
@@ -207,7 +207,7 @@ const CheckoutPage: React.FC = () => {
                       name="address"
                       value={formData.address}
                       onChange={handleChange}
-                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.address ? "border-red-500" : "border-gray-300"
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.address ? "border-red-500" : "border-gray-300"
                         }`}
                     />
                     {errors.address && (
@@ -223,7 +223,7 @@ const CheckoutPage: React.FC = () => {
                       name="city"
                       value={formData.city}
                       onChange={handleChange}
-                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.city ? "border-red-500" : "border-gray-300"
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.city ? "border-red-500" : "border-gray-300"
                         }`}
                     />
                     {errors.city && (
@@ -239,7 +239,7 @@ const CheckoutPage: React.FC = () => {
                       name="state"
                       value={formData.state}
                       onChange={handleChange}
-                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.state ? "border-red-500" : "border-gray-300"
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.state ? "border-red-500" : "border-gray-300"
                         }`}
                     />
                     {errors.state && (
@@ -255,7 +255,7 @@ const CheckoutPage: React.FC = () => {
                       name="zipCode"
                       value={formData.zipCode}
                       onChange={handleChange}
-                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.zipCode ? "border-red-500" : "border-gray-300"
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.zipCode ? "border-red-500" : "border-gray-300"
                         }`}
                     />
                     {errors.zipCode && (
@@ -270,7 +270,7 @@ const CheckoutPage: React.FC = () => {
                       name="country"
                       value={formData.country}
                       onChange={handleChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     >
                       <option value="United States">United States</option>
                       <option value="Canada">Canada</option>
@@ -299,7 +299,7 @@ const CheckoutPage: React.FC = () => {
                       name="cardName"
                       value={formData.cardName}
                       onChange={handleChange}
-                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.cardName ? "border-red-500" : "border-gray-300"
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.cardName ? "border-red-500" : "border-gray-300"
                         }`}
                     />
                     {errors.cardName && (
@@ -317,7 +317,7 @@ const CheckoutPage: React.FC = () => {
                       onChange={handleCardNumberChange}
                       maxLength={19}
                       placeholder="XXXX XXXX XXXX XXXX"
-                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.cardNumber ? "border-red-500" : "border-gray-300"
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.cardNumber ? "border-red-500" : "border-gray-300"
                         }`}
                     />
                     {errors.cardNumber && (
@@ -335,7 +335,7 @@ const CheckoutPage: React.FC = () => {
                       onChange={handleChange}
                       placeholder="MM/YY"
                       maxLength={5}
-                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.cardExpiry ? "border-red-500" : "border-gray-300"
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.cardExpiry ? "border-red-500" : "border-gray-300"
                         }`}
                     />
                     {errors.cardExpiry && (
@@ -352,7 +352,7 @@ const CheckoutPage: React.FC = () => {
                       value={formData.cardCvv}
                       onChange={handleChange}
                       maxLength={4}
-                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.cardCvv ? "border-red-500" : "border-gray-300"
+                      className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.cardCvv ? "border-red-500" : "border-gray-300"
                         }`}
                     />
                     {errors.cardCvv && (
@@ -370,7 +370,7 @@ const CheckoutPage: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full py-3 rounded-md font-medium text-white bg-blue-ring-blue-500 hover:bg-blue-600 transition-colors ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+                className={`w-full py-3 rounded-md font-medium text-white cursor-pointer bg-indigo-500 hover:bg-blue-600 transition-colors ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                   }`}
               >
                 {isSubmitting ? "Processing..." : `Place Order • $${finalTotal.toFixed(2)}`}
@@ -419,7 +419,7 @@ const CheckoutPage: React.FC = () => {
                 <div className="border-t border-gray-200 pt-3 mt-3">
                   <div className="flex justify-between">
                     <span className="font-bold">Total</span>
-                    <span className="font-bold text-blue-ring-blue-500 text-xl">
+                    <span className="font-bold text-blue-ring-indigo-500 text-xl">
                       ${finalTotal.toFixed(2)}
                     </span>
                   </div>
@@ -428,7 +428,7 @@ const CheckoutPage: React.FC = () => {
 
               <div className="bg-gray-50 p-4 rounded-md text-sm text-gray-600">
                 <p className="mb-2">
-                  By placing your order, you agree to our <a href="#" className="text-blue-ring-blue-500 hover:underline">Terms of Service</a> and <a href="#" className="text-blue-ring-blue-500 hover:underline">Privacy Policy</a>.
+                  By placing your order, you agree to our <a href="#" className="text-blue-ring-indigo-500 hover:underline">Terms of Service</a> and <a href="#" className="text-blue-ring-indigo-500 hover:underline">Privacy Policy</a>.
                 </p>
                 <p>
                   Your personal data will be used to process your order and support your experience throughout this website.

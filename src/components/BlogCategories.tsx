@@ -19,7 +19,7 @@ const BlogCategories: React.FC = () => {
           size="sm"
           className={cn(
             "rounded-full",
-            selectedCategory === null ? "bg-blue-500 text-white hover:bg-blue-500/90" : ""
+            selectedCategory === null ? "bg-indigo-500 text-white hover:bg-indigo-500/90" : ""
           )}
           onClick={() => setSelectedCategory(null)}
         >
@@ -33,7 +33,7 @@ const BlogCategories: React.FC = () => {
             size="sm"
             className={cn(
               "rounded-full",
-              selectedCategory === category ? "bg-blue-500 text-white hover:bg-blue-500/90" : ""
+              selectedCategory === category ? "bg-indigo-500 text-white hover:bg-indigo-500/90" : ""
             )}
             onClick={() => setSelectedCategory(category)}
           >

@@ -35,44 +35,49 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-xl md:text-2xl font-bold text-shop-indigo">
-            SHOP<span className="text-blue-500">WAVE</span>
+            SHOP<span className="text-indigo-500">WAVE</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <div className="flex items-center space-x-6">
-              <Link to="/" className="text-gray-700 hover:text-blue-500 font-medium">Home</Link>
-              <Link to="/shop" className="text-gray-700 hover:text-blue-500 font-medium">Shop</Link>
-              <Link to="/blog" className="text-gray-700 hover:text-blue-500 font-medium">Blog</Link>
-              <Link to="/about" className="text-gray-700 hover:text-blue-500 font-medium">About</Link>
-              <Link to="/contact" className="text-gray-700 hover:text-blue-500 font-medium">Contact</Link>
+              <Link to="/" className="text-gray-700 hover:text-indigo-500 font-medium">Home</Link>
+              <Link to="/shop" className="text-gray-700 hover:text-indigo-500 font-medium">Shop</Link>
+              <Link to="/blog" className="text-gray-700 hover:text-indigo-500 font-medium">Blog</Link>
+              <Link to="/about" className="text-gray-700 hover:text-indigo-500 font-medium">About</Link>
+              <Link to="/contact" className="text-gray-700 hover:text-indigo-500 font-medium">Contact</Link>
             </div>
           </div>
 
           {/* Search and Cart Icons */}
           <div className="hidden md:flex items-center space-x-4">
-            <button 
-              className="text-gray-700 hover:text-blue-500"
+            <button
+              className="text-gray-700 hover:text-indigo-500"
               aria-label="Search"
             >
               <Search size={20} />
             </button>
-            <Link to="/cart" className="text-gray-700 hover:text-blue-500 relative">
+            <Link
+              to="/cart"
+              aria-label="View shopping cart"
+              className="text-gray-700 hover:text-indigo-500 relative"
+            >
               <ShoppingCart size={20} />
               {itemCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-blue-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-indigo-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                   {itemCount}
                 </span>
               )}
             </Link>
+
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-4">
-            <Link to="/cart" className="text-gray-700 hover:text-blue-500 relative">
+            <Link to="/cart" className="text-gray-700 hover:text-indigo-500 relative">
               <ShoppingCart size={20} />
               {itemCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-blue-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-indigo-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                   {itemCount}
                 </span>
               )}
@@ -91,37 +96,37 @@ const Navbar: React.FC = () => {
         {mobileMenuOpen && (
           <div className="md:hidden py-4 animate-fade-in">
             <div className="flex flex-col space-y-4">
-              <Link 
-                to="/" 
-                className="text-gray-700 hover:text-blue-500 font-medium py-2"
+              <Link
+                to="/"
+                className="text-gray-700 hover:text-indigo-500 font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
               </Link>
-              <Link 
-                to="/shop" 
-                className="text-gray-700 hover:text-blue-500 font-medium py-2"
+              <Link
+                to="/shop"
+                className="text-gray-700 hover:text-indigo-500 font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Shop
               </Link>
-              <Link 
-                to="/blog" 
-                className="text-gray-700 hover:text-blue-500 font-medium py-2"
+              <Link
+                to="/blog"
+                className="text-gray-700 hover:text-indigo-500 font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Blog
               </Link>
-              <Link 
-                to="/about" 
-                className="text-gray-700 hover:text-blue-500 font-medium py-2"
+              <Link
+                to="/about"
+                className="text-gray-700 hover:text-indigo-500 font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
               </Link>
-              <Link 
-                to="/contact" 
-                className="text-gray-700 hover:text-blue-500 font-medium py-2"
+              <Link
+                to="/contact"
+                className="text-gray-700 hover:text-indigo-500 font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact

@@ -1,154 +1,349 @@
-
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Wireless Bluetooth Headphones",
-        "description": "High-quality wireless headphones with noise cancellation and 20-hour battery life. Perfect for music lovers on the go.",
-        "price": 129.99,
-        "category": "Electronics",
-        "featured": true,
-        "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1000",
-        "rating": 4.5,
-        "stock": 15
-      },
-      {
-        "id": 2,
-        "name": "Smart Fitness Tracker",
-        "description": "Track your fitness goals with this advanced smart tracker. Features heart rate monitoring, sleep analysis, and exercise tracking.",
-        "price": 79.99,
-        "category": "Electronics",
-        "featured": true,
-        "imageUrl": "https://images.unsplash.com/photo-1576243345690-4e4b79b63288?q=80&w=1000",
-        "rating": 4.2,
-        "stock": 8
-      },
-      {
-        "id": 3,
-        "name": "Premium Cotton T-Shirt",
-        "description": "Ultra-soft premium cotton t-shirt available in multiple colors. Perfect for everyday casual wear.",
-        "price": 24.99,
-        "category": "Clothing",
-        "featured": false,
-        "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1000",
-        "rating": 4.0,
-        "stock": 25
-      },
-      {
-        "id": 4,
-        "name": "Designer Leather Wallet",
-        "description": "Handcrafted genuine leather wallet with multiple card slots and a coin pocket. Elegant and practical.",
-        "price": 49.99,
-        "category": "Accessories",
-        "featured": true,
-        "imageUrl": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=1000",
-        "rating": 4.7,
-        "stock": 12
-      },
-      {
-        "id": 5,
-        "name": "Stainless Steel Water Bottle",
-        "description": "Eco-friendly double-walled stainless steel water bottle that keeps drinks cold for 24 hours or hot for 12 hours.",
-        "price": 34.99,
-        "category": "Accessories",
-        "featured": false,
-        "imageUrl": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=1000",
-        "rating": 4.3,
-        "stock": 20
-      },
-      {
-        "id": 6,
-        "name": "Wireless Charging Pad",
-        "description": "Fast wireless charging pad compatible with all Qi-enabled devices. Sleek design with LED indicator.",
-        "price": 29.99,
-        "category": "Electronics",
-        "featured": false,
-        "imageUrl": "https://images.unsplash.com/photo-1633495763986-17724253b6c5?q=80&w=1000",
-        "rating": 4.1,
-        "stock": 14
-      },
-      {
-        "id": 7,
-        "name": "Denim Jeans",
-        "description": "Classic slim-fit denim jeans made from high-quality stretch fabric for comfort and durability.",
-        "price": 59.99,
-        "category": "Clothing",
-        "featured": false,
-        "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1000",
-        "rating": 4.4,
-        "stock": 18
-      },
-      {
-        "id": 8,
-        "name": "Portable Bluetooth Speaker",
-        "description": "Compact waterproof Bluetooth speaker with 360° sound and 12-hour playtime. Perfect for outdoor adventures.",
-        "price": 89.99,
-        "category": "Electronics",
-        "featured": true,
-        "imageUrl": "https://images.unsplash.com/photo-1589003077984-894e133f8887?q=80&w=1000",
-        "rating": 4.6,
-        "stock": 10
-      },
-      {
-        "id": 9,
-        "name": "Leather Crossbody Bag",
-        "description": "Stylish genuine leather crossbody bag with adjustable strap and multiple compartments. Perfect for everyday use.",
-        "price": 69.99,
-        "category": "Accessories",
-        "featured": false,
-        "imageUrl": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=1000",
-        "rating": 4.3,
-        "stock": 8
-      },
-      {
-        "id": 10,
-        "name": "Smart Home Security Camera",
-        "description": "HD security camera with night vision, motion detection, and two-way audio. Connect to your smartphone for remote monitoring.",
-        "price": 119.99,
-        "category": "Electronics",
-        "featured": false,
-        "imageUrl": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1000",
-        "rating": 4.2,
-        "stock": 5
-      },
-      {
-        "id": 11,
-        "name": "Knit Sweater",
-        "description": "Warm and cozy knit sweater perfect for colder months. Made from a soft wool blend in various colors.",
-        "price": 54.99,
-        "category": "Clothing",
-        "featured": false,
-        "imageUrl": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1000",
-        "rating": 4.0,
-        "stock": 12
-      },
-      {
-        "id": 12,
-        "name": "Polarized Sunglasses",
-        "description": "UV-protective polarized sunglasses with lightweight frame. Stylish design suitable for all face shapes.",
-        "price": 39.99,
-        "category": "Accessories",
-        "featured": true,
-        "imageUrl": "https://images.unsplash.com/photo-1577803645773-f96470509666?q=80&w=1000",
-        "rating": 4.5,
-        "stock": 15
-      }
-    ],
-    "categories": [
-      {
-        "id": 1,
-        "name": "Electronics",
-        "description": "Latest gadgets and electronic devices for modern living."
-      },
-      {
-        "id": 2,
-        "name": "Clothing",
-        "description": "Fashionable apparel for men and women."
-      },
-      {
-        "id": 3,
-        "name": "Accessories",
-        "description": "Stylish accessories to complement your look."
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Bluetooth Headphones",
+      "description": "High-quality wireless headphones with noise cancellation and 20-hour battery life. Perfect for music lovers on the go.",
+      "price": 129.99,
+      "category": "Electronics",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1000",
+      "rating": 4.5,
+      "stock": 15
+    },
+    {
+      "id": 2,
+      "name": "Smart Fitness Tracker",
+      "description": "Track your fitness goals with this advanced smart tracker. Features heart rate monitoring, sleep analysis, and exercise tracking.",
+      "price": 79.99,
+      "category": "Electronics",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1576243345690-4e4b79b63288?q=80&w=1000",
+      "rating": 4.2,
+      "stock": 8
+    },
+    {
+      "id": 3,
+      "name": "Premium Cotton T-Shirt",
+      "description": "Ultra-soft premium cotton t-shirt available in multiple colors. Perfect for everyday casual wear.",
+      "price": 24.99,
+      "category": "Clothing",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1000",
+      "rating": 4.0,
+      "stock": 25
+    },
+    {
+      "id": 4,
+      "name": "Designer Leather Wallet",
+      "description": "Handcrafted genuine leather wallet with multiple card slots and a coin pocket. Elegant and practical.",
+      "price": 49.99,
+      "category": "Accessories",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=1000",
+      "rating": 4.7,
+      "stock": 12
+    },
+    {
+      "id": 5,
+      "name": "Stainless Steel Water Bottle",
+      "description": "Eco-friendly double-walled stainless steel water bottle that keeps drinks cold for 24 hours or hot for 12 hours.",
+      "price": 34.99,
+      "category": "Accessories",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=1000",
+      "rating": 4.3,
+      "stock": 20
+    },
+    {
+      "id": 6,
+      "name": "Wireless Charging Pad",
+      "description": "Fast wireless charging pad compatible with all Qi-enabled devices. Sleek design with LED indicator.",
+      "price": 29.99,
+      "category": "Electronics",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1633495763986-17724253b6c5?q=80&w=1000",
+      "rating": 4.1,
+      "stock": 14
+    },
+    {
+      "id": 7,
+      "name": "Denim Jeans",
+      "description": "Classic slim-fit denim jeans made from high-quality stretch fabric for comfort and durability.",
+      "price": 59.99,
+      "category": "Clothing",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1000",
+      "rating": 4.4,
+      "stock": 18
+    },
+    {
+      "id": 8,
+      "name": "Portable Bluetooth Speaker",
+      "description": "Compact waterproof Bluetooth speaker with 360° sound and 12-hour playtime. Perfect for outdoor adventures.",
+      "price": 89.99,
+      "category": "Electronics",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1589003077984-894e133f8887?q=80&w=1000",
+      "rating": 4.6,
+      "stock": 10
+    },
+    {
+      "id": 9,
+      "name": "Leather Crossbody Bag",
+      "description": "Stylish genuine leather crossbody bag with adjustable strap and multiple compartments. Perfect for everyday use.",
+      "price": 69.99,
+      "category": "Accessories",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=1000",
+      "rating": 4.3,
+      "stock": 8
+    },
+    {
+      "id": 10,
+      "name": "Smart Home Security Camera",
+      "description": "HD security camera with night vision, motion detection, and two-way audio. Connect to your smartphone for remote monitoring.",
+      "price": 119.99,
+      "category": "Electronics",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1000",
+      "rating": 4.2,
+      "stock": 5
+    },
+    {
+      "id": 11,
+      "name": "Knit Sweater",
+      "description": "Warm and cozy knit sweater perfect for colder months. Made from a soft wool blend in various colors.",
+      "price": 54.99,
+      "category": "Clothing",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1000",
+      "rating": 4.0,
+      "stock": 12
+    },
+    {
+      "id": 12,
+      "name": "Polarized Sunglasses",
+      "description": "UV-protective polarized sunglasses with lightweight frame. Stylish design suitable for all face shapes.",
+      "price": 39.99,
+      "category": "Accessories",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1577803645773-f96470509666?q=80&w=1000",
+      "rating": 4.5,
+      "stock": 15
+    },
+    {
+      "id": 13,
+      "name": "Non-Stick Cookware Set",
+      "description": "Complete 10-piece non-stick cookware set with tempered glass lids. Durable and easy to clean.",
+      "price": 149.99,
+      "category": "Home & Kitchen",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1584990347449-a5d9f800a783?q=80&w=1000",
+      "rating": 4.4,
+      "stock": 7
+    },
+    {
+      "id": 14,
+      "name": "Bestselling Novel",
+      "description": "Award-winning fiction novel that topped the charts for weeks. A compelling story of adventure and self-discovery.",
+      "price": 19.99,
+      "category": "Books",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1000",
+      "rating": 4.8,
+      "stock": 30
+    },
+    {
+      "id": 15,
+      "name": "Organic Face Serum",
+      "description": "Hydrating face serum with vitamin C and hyaluronic acid. Helps reduce fine lines and brightens skin.",
+      "price": 44.99,
+      "category": "Beauty & Personal Care",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1570194065650-d99fb4a8e9ec?q=80&w=1000",
+      "rating": 4.7,
+      "stock": 22
+    },
+    {
+      "id": 16,
+      "name": "Yoga Mat",
+      "description": "Eco-friendly non-slip yoga mat with alignment markings. Perfect for yoga, pilates, and floor exercises.",
+      "price": 32.99,
+      "category": "Sports & Outdoors",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?q=80&w=1000",
+      "rating": 4.3,
+      "stock": 15
+    },
+    {
+      "id": 17,
+      "name": "Smart LED Light Bulbs",
+      "description": "Set of 4 color-changing smart LED bulbs. Control via app or voice commands with compatible smart home systems.",
+      "price": 49.99,
+      "category": "Home & Kitchen",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=1000",
+      "rating": 4.2,
+      "stock": 18
+    },
+    {
+      "id": 18,
+      "name": "Self-Help Book",
+      "description": "Practical guide to personal development with actionable steps for improving productivity and mindfulness.",
+      "price": 15.99,
+      "category": "Books",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1000",
+      "rating": 4.5,
+      "stock": 25
+    },
+    {
+      "id": 19,
+      "name": "Natural Shampoo and Conditioner Set",
+      "description": "Sulfate-free shampoo and conditioner with botanical extracts. Gentle on hair and scalp.",
+      "price": 28.99,
+      "category": "Beauty & Personal Care",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?q=80&w=1000",
+      "rating": 4.1,
+      "stock": 20
+    },
+    {
+      "id": 20,
+      "name": "Adjustable Dumbbells",
+      "description": "Space-saving adjustable dumbbells that replace multiple weights. Perfect for home workouts.",
+      "price": 199.99,
+      "category": "Sports & Outdoors",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000",
+      "rating": 4.6,
+      "stock": 8
+    },
+    {
+      "id": 21,
+      "name": "Coffee Maker",
+      "description": "Programmable coffee maker with thermal carafe that keeps coffee hot for hours. 12-cup capacity.",
+      "price": 89.99,
+      "category": "Home & Kitchen",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?q=80&w=1000",
+      "rating": 4.4,
+      "stock": 12
+    },
+    {
+      "id": 22,
+      "name": "Cookbook Collection",
+      "description": "Set of 3 bestselling cookbooks featuring recipes from around the world. Perfect for culinary enthusiasts.",
+      "price": 45.99,
+      "category": "Books",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1589998059171-988d887df646?q=80&w=1000",
+      "rating": 4.7,
+      "stock": 10
+    },
+    {
+      "id": 23,
+      "name": "Skincare Gift Set",
+      "description": "Luxury skincare gift set including cleanser, toner, moisturizer, and face mask. Made with natural ingredients.",
+      "price": 79.99,
+      "category": "Beauty & Personal Care",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?q=80&w=1000",
+      "rating": 4.8,
+      "stock": 15
+    },
+    {
+      "id": 24,
+      "name": "Running Shoes",
+      "description": "Lightweight running shoes with responsive cushioning and breathable mesh upper. Available in multiple colors.",
+      "price": 119.99,
+      "category": "Sports & Outdoors",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000",
+      "rating": 4.5,
+      "stock": 20
+    },
+    {
+      "id": 25,
+      "name": "Winter Jacket",
+      "description": "Insulated winter jacket with water-resistant outer shell. Keeps you warm in cold weather conditions.",
+      "price": 129.99,
+      "category": "Clothing",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=1000",
+      "rating": 4.6,
+      "stock": 18
+    },
+    {
+      "id": 26,
+      "name": "Wireless Earbuds",
+      "description": "True wireless earbuds with noise isolation and touch controls. Includes charging case for extended battery life.",
+      "price": 99.99,
+      "category": "Electronics",
+      "featured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1000",
+      "rating": 4.3,
+      "stock": 25
+    },
+    {
+      "id": 27,
+      "name": "Leather Belt",
+      "description": "Genuine leather belt with classic buckle. Versatile accessory for casual and formal outfits.",
+      "price": 29.99,
+      "category": "Accessories",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1000",
+      "rating": 4.2,
+      "stock": 30
+    },
+    {
+      "id": 28,
+      "name": "Digital Drawing Tablet",
+      "description": "Professional drawing tablet with pressure-sensitive pen. Perfect for digital artists and designers.",
+      "price": 249.99,
+      "category": "Electronics",
+      "featured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1561886318-331d2a6e2d74?q=80&w=1000",
+      "rating": 4.7,
+      "stock": 10
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics",
+      "description": "Latest gadgets and electronic devices for modern living."
+    },
+    {
+      "id": 2,
+      "name": "Clothing",
+      "description": "Fashionable apparel for men and women."
+    },
+    {
+      "id": 3,
+      "name": "Accessories",
+      "description": "Stylish accessories to complement your look."
+    },
+    {
+      "id": 4,
+      "name": "Home & Kitchen",
+      "description": "Essential items for your home and kitchen needs."
+    },
+    {
+      "id": 5,
+      "name": "Books",
+      "description": "Bestselling books across various genres and topics."
+    },
+    {
+      "id": 6,
+      "name": "Beauty & Personal Care",
+      "description": "Quality products for your beauty and personal care routine."
+    },
+    {
+      "id": 7,
+      "name": "Sports & Outdoors",
+      "description": "Equipment and gear for sports and outdoor activities."
+    }
+  ]
+}

@@ -99,7 +99,7 @@ const ProductPage: React.FC = () => {
     <Layout>
       <div className="container mx-auto px-4 py-8">
         <div className="mb-6">
-          <Link to="/shop" className="text-gray-600 hover:text-blue-500 inline-flex items-center">
+          <Link to="/shop" className="text-gray-600 hover:text-indigo-500 inline-flex items-center">
             <ArrowLeft size={18} className="mr-1" /> Back to Shop
           </Link>
         </div>
@@ -135,7 +135,7 @@ const ProductPage: React.FC = () => {
               <span className="text-sm text-gray-500 ml-2">({product.rating})</span>
             </div>
             
-            <span className="text-2xl font-bold text-blue-500 mb-6 block">
+            <span className="text-2xl font-bold text-indigo-500 mb-6 block">
               ${product.price.toFixed(2)}
             </span>
             
@@ -167,7 +167,7 @@ const ProductPage: React.FC = () => {
               disabled={!product.stock}
               className={`w-full py-3 rounded-md font-medium text-white ${
                 product.stock 
-                  ? 'bg-blue-text-blue-500 hover:bg-blue-600'
+                  ? 'bg-indigo-500 hover:bg-blue-600'
                   : 'bg-gray-400 cursor-not-allowed'
               } transition-colors mb-6`}
             >
