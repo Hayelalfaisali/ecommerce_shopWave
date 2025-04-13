@@ -9,7 +9,6 @@ function Team() {
                         The dedicated people behind ShopWave who work tirelessly to bring you the best shopping experience.
                     </p>
                 </div>
-
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div className="text-center">
                         <div className="relative mb-4 inline-block">
@@ -26,7 +25,6 @@ function Team() {
                             Visionary leader with a passion for creating exceptional customer experiences.
                         </p>
                     </div>
-
                     <div className="text-center">
                         <div className="relative mb-4 inline-block">
                             <div className="w-full h-full bg-indigo-500 rounded-full absolute opacity-10"></div>
@@ -58,7 +56,6 @@ function Team() {
                             Curator with an eye for quality and trending products that customers love.
                         </p>
                     </div>
-
                     <div className="text-center">
                         <div className="relative mb-4 inline-block">
                             <div className="w-full h-full bg-indigo-500 rounded-full absolute opacity-10"></div>
@@ -79,5 +76,4 @@ function Team() {
         </div>
     )
 }
-
 export default Team

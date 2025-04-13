@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
           {/* Search and Cart Icons */}
           <div className="hidden md:flex items-center space-x-4">
             <button
-              className="text-gray-700 hover:text-indigo-500"
+              className="text-gray-700 cursor-pointer hover:text-indigo-500"
               aria-label="Search"
             >
               <Search size={20} />

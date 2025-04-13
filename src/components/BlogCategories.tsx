@@ -19,7 +19,7 @@ const BlogCategories: React.FC = () => {
           size="sm"
           className={cn(
             "rounded-full",
-            selectedCategory === null ? "bg-indigo-500 text-white hover:bg-indigo-500/90" : ""
+            selectedCategory === null ? "bg-indigo-500 cursor-pointer text-white hover:bg-indigo-500/90" : ""
           )}
           onClick={() => setSelectedCategory(null)}
         >
@@ -32,8 +32,8 @@ const BlogCategories: React.FC = () => {
             variant="outline"
             size="sm"
             className={cn(
-              "rounded-full",
-              selectedCategory === category ? "bg-indigo-500 text-white hover:bg-indigo-500/90" : ""
+              "rounded-full cursor-pointer",
+              selectedCategory === category ? "bg-indigo-500 cursor-pointer text-white hover:bg-indigo-500/90" : ""
             )}
             onClick={() => setSelectedCategory(category)}
           >

@@ -39,7 +39,6 @@ const Footer: React.FC = () => {
               <li><Link to="/contact" className="text-gray-600 hover:text-indigo-500">Contact</Link></li>
             </ul>
           </div>
-
           {/* Customer Service */}
           <div>
             <h4 className="font-semibold text-gray-800 mb-4">Customer Service</h4>
@@ -50,7 +49,6 @@ const Footer: React.FC = () => {
               <li><a href="#" className="text-gray-600 hover:text-indigo-500">Terms & Conditions</a></li>
             </ul>
           </div>
-
           {/* Contact Info */}
           <div>
             <h4 className="font-semibold text-gray-800 mb-4">Contact Us</h4>
@@ -70,7 +68,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-
         <div className="border-t border-gray-200 mt-10 pt-6">
           <p className="text-center text-gray-500 text-sm">
             &copy; {new Date().getFullYear()} ShopWave. All rights reserved.
@@ -80,5 +77,4 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
-
 export default Footer;

@@ -165,7 +165,7 @@ const ProductPage: React.FC = () => {
             <button
               onClick={handleAddToCart}
               disabled={!product.stock}
-              className={`w-full py-3 rounded-md font-medium text-white ${
+              className={`w-full py-3 cursor-pointer rounded-md font-medium text-white ${
                 product.stock 
                   ? 'bg-indigo-500 hover:bg-blue-600'
                   : 'bg-gray-400 cursor-not-allowed'

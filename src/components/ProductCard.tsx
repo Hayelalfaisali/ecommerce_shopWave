@@ -52,7 +52,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <span className="product-price">${product.price.toFixed(2)}</span>
             <button
               onClick={handleAddToCart}
-              className="p-2 rounded-full bg-gray-100 hover:bg-indigo-500 hover:text-white transition-colors duration-300"
+              className="p-2 rounded-full cursor-pointer bg-gray-100 hover:bg-indigo-500 hover:text-white transition-colors duration-300"
               aria-label="Add to cart"
             >
               <ShoppingCart size={16} />

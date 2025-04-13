@@ -19,7 +19,7 @@ const QuantitySelector: React.FC<QuantitySelectorProps> = ({
     <div className="flex items-center border border-gray-300 rounded-md w-fit">
       <button
         onClick={onDecrease}
-        className="px-2 py-1 text-gray-600 hover:bg-gray-100 disabled:opacity-50"
+        className="px-2 py-1 text-gray-600 cursor-pointer hover:bg-gray-100 disabled:opacity-50"
         disabled={quantity <= 1}
         aria-label="Decrease quantity"
       >
@@ -30,7 +30,7 @@ const QuantitySelector: React.FC<QuantitySelectorProps> = ({
       
       <button
         onClick={onIncrease}
-        className="px-2 py-1 text-gray-600 hover:bg-gray-100 disabled:opacity-50"
+        className="px-2 py-1 text-gray-600 cursor-pointer hover:bg-gray-100 disabled:opacity-50"
         disabled={quantity >= max}
         aria-label="Increase quantity"
       >

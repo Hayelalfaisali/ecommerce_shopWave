@@ -159,7 +159,7 @@ function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`btn-primary py-3 px-6 flex items-center justify-center gap-2 ${
+          className={`btn-primary py-3 cursor-pointer px-6 flex items-center justify-center gap-2 ${
             isSubmitting ? "opacity-70 cursor-not-allowed" : ""
           }`}
         >

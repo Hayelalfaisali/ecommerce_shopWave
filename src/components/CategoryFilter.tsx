@@ -18,7 +18,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
       <h3 className="text-lg font-semibold mb-3">Categories</h3>
       <div className="space-y-2">
         <button
-          className={`block w-full text-left py-2 px-3 rounded-md transition-colors ${
+          className={`block w-full cursor-pointer text-left py-2 px-3 rounded-md transition-colors ${
             selectedCategory === "all"
               ? "bg-indigo-500 text-white"
               : "bg-gray-100 hover:bg-gray-200 text-gray-700"
@@ -31,7 +31,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
         {categories.map((category) => (
           <button
             key={category.id}
-            className={`block w-full text-left py-2 px-3 rounded-md transition-colors ${
+            className={`block w-full text-left cursor-pointer py-2 px-3 rounded-md transition-colors ${
               selectedCategory === category.name
                 ? "bg-indigo-500 text-white"
                 : "bg-gray-100 hover:bg-gray-200 text-gray-700"

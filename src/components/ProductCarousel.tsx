@@ -28,7 +28,6 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
   const progressRef = useRef<HTMLDivElement>(null)
   const [progressWidth, setProgressWidth] = useState(0)
 
-  // Create a circular array of products for infinite looping
   const extendedProducts = [...products, ...products.slice(0, 4)]
 
   useEffect(() => {
@@ -49,10 +48,8 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
     setIsTransitioning(true)
 
     if (currentIndex >= maxIndex - 1) {
-      // When we reach the end, we'll show the cloned items first
       setCurrentIndex(maxIndex)
 
-      // Then after the transition completes, we'll instantly jump back to the start
       setTimeout(() => {
         setIsTransitioning(false)
         setCurrentIndex(0)
@@ -69,7 +66,6 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
     setIsTransitioning(true)
 
     if (currentIndex <= 0) {
-      // Jump to the end
       setCurrentIndex(maxIndex - 1)
     } else {
       setCurrentIndex(currentIndex - 1)
@@ -117,7 +113,6 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
     }
   }, [isHovering, currentIndex])
 
-  // Touch and mouse drag handlers
   const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
     setIsDragging(true)
     const clientX = "touches" in e ? e.touches[0].clientX : e.clientX
@@ -136,7 +131,6 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
     if (!isDragging) return
     setIsDragging(false)
 
-    // If dragged more than 100px, change slide
     if (Math.abs(dragOffset) > 100) {
       if (dragOffset > 0) {
         prevSlide()
@@ -147,36 +141,30 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
     setDragOffset(0)
   }
 
-  // Handle transition end
   const handleTransitionEnd = () => {
     setIsTransitioning(false)
   }
 
   return (
     <div className="my-16 relative">
-      {/* Header with gradient underline */}
       <div className="flex items-center justify-between mb-8">
         <div>
           <h2 className="text-2xl font-bold tracking-tight">{title}</h2>
           <div className="h-1 w-20 bg-gradient-to-r from-purple-500 to-pink-500 mt-2 rounded-full"></div>
         </div>
-
         <div className="flex items-center gap-4">
-          {/* View all link */}
           <Link
             to={viewAllUrl}
             className="text-sm font-medium text-purple-600 hover:text-purple-800 transition-colors hidden md:flex items-center"
           >
             View All <ChevronRight size={16} className="ml-1" />
           </Link>
-
-          {/* Navigation buttons */}
           <div className="flex space-x-3">
             <Button
               onClick={prevSlide}
               variant="outline"
               size="icon"
-              className="rounded-full border-gray-200 hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-all shadow-sm"
+              className="rounded-full cursor-pointer border-gray-200 hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-all shadow-sm"
               aria-label="Previous slide"
             >
               <ArrowLeft size={18} />
@@ -185,7 +173,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
               onClick={nextSlide}
               variant="outline"
               size="icon"
-              className="rounded-full border-gray-200 hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-all shadow-sm"
+              className="rounded-full cursor-pointer border-gray-200 hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-all shadow-sm"
               aria-label="Next slide"
             >
               <ArrowRight size={18} />
@@ -194,13 +182,11 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
         </div>
       </div>
 
-      {/* Carousel container with shadow and rounded corners */}
       <div
         className="relative overflow-hidden rounded-xl bg-white"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
-        {/* Progress bar */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gray-100 z-10">
           <div
             ref={progressRef}
@@ -209,7 +195,6 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
           ></div>
         </div>
 
-        {/* Carousel track */}
         <div
           ref={carouselRef}
           className={cn("flex", isTransitioning ? "transition-transform duration-500 ease-out" : "transition-none")}
@@ -225,7 +210,6 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
           onTouchMove={handleDragMove}
           onTouchEnd={handleDragEnd}
         >
-          {/* Extended products array for infinite loop */}
           {extendedProducts.map((product, index) => (
             <div
               key={`${product.id}-${index}`}
@@ -242,15 +226,12 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
           ))}
         </div>
 
-        {/* Gradient overlays for fade effect */}
         <div className="absolute top-0 bottom-0 left-0 w-8 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
         <div className="absolute top-0 bottom-0 right-0 w-8 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
       </div>
 
-      {/* Improved indicators */}
       <div className="flex justify-center mt-8 space-x-2">
         {Array.from({ length: Math.min(5, Math.ceil(products.length / itemsPerPage)) }).map((_, index) => {
-          // Only show indicators for first 5 pages to avoid clutter
           const isActive = currentIndex === index || (currentIndex >= maxIndex && index === 0)
           const isNearActive = Math.abs(currentIndex - index) <= 1
 
@@ -276,7 +257,6 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products, title, view
         )}
       </div>
 
-      {/* Mobile view all link */}
       <div className="mt-4 text-center md:hidden">
         <Link
           to={viewAllUrl}

@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
             <div className="mt-10 pt-6 border-t border-slate-200">
               <p className="mb-3 text-sm font-medium text-slate-500">Trusted by thousands of customers</p>
               <div className="flex items-center justify-center lg:justify-start">
-                <div className="flex -space-x-2">
+                <div className="flex -space-x-2 cursor-pointer">
                   {[
                     "https://randomuser.me/api/portraits/men/32.jpg",
                     "https://randomuser.me/api/portraits/women/44.jpg",
@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
                     {[1, 2, 3, 4, 5].map((i) => (
                       <img
                         key={i}
-                        src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" 
+                        src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
                         alt="star"
                         className="w-4 h-4 mr-0.5"
                       />

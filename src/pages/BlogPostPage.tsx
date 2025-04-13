@@ -47,7 +47,7 @@ const BlogPostPage: React.FC = () => {
           <Button
             variant="outline"
             size="sm"
-            className="mb-6"
+            className="mb-6 cursor-pointer"
             onClick={() => navigate("/blog")}
           >
             <ArrowLeft size={16} className="mr-2" />
