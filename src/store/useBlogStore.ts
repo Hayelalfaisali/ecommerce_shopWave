@@ -23,6 +23,7 @@ export const useBlogStore = create<BlogState>((set, get) => ({
   posts: blogPosts.posts,
   selectedCategory: null,
   setSelectedCategory: (category) => set({ selectedCategory: category }),
+
   getFilteredPosts: () => {
     const { posts, selectedCategory } = get();
     if (!selectedCategory) return posts;

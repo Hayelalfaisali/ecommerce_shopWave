@@ -1,6 +1,5 @@
 
 import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ShopPage from "./pages/ShopPage";
@@ -17,7 +16,7 @@ import NotFound from "./pages/NotFound";
 const App = () => (
     <>
       <Toaster />
-      <Sonner />
+      {/* BrowserRouter enables client-side routing in the React application */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
